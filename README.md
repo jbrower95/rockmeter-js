@@ -1,6 +1,8 @@
 # rockmeter-js
 The Rock-Meter Thing From Guitar Hero And Rock Band In YOUR Web Apps!
 
+<img src="https://github.com/jbrower95/rockmeter-js/blob/master/rockmeter/rockmeter.png?raw=true">
+
 To use:
 
 copy build/ into your project. Include the js and css files.
