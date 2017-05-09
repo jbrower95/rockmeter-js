@@ -1,0 +1,44 @@
+<html>
+
+<body>
+
+	<link rel="stylesheet" href="rockmeter.css"></link>
+
+	<div id="bucket">
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="rockmeter.js"></script>
+	<script>
+		let meter = new RockMeter(0, 30);
+		meter.onBecameYellow(() => console.log("Became yellow"));
+		meter.onBecameRed(() => console.log("Became red."));
+		meter.onBecameGreen(() => console.log("Became green."));
+
+		$(document).keydown(function(e) {
+			    switch(e.which) {
+			        case 37: // left
+			        meter.setProgress(meter.getProgress() - 1);
+			        break;
+
+			        case 38: // up
+			        break;
+
+			        case 39: // right
+			        meter.setProgress(meter.getProgress() + 1);
+			        break;
+
+			        case 40: // down
+			        break;
+
+			        default: return; // exit this handler for other keys
+			    }
+			    e.preventDefault(); // prevent the default action (scroll / move caret)
+			});
+
+		meter.install("bucket");
+		
+	</script>
+</body>
+
+</html>
