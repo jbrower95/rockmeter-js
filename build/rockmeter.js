@@ -23,7 +23,7 @@ class RockMeter {
 
   _makeMeter() {
   	let meter = document.createElement("img");
-  	meter.src = "rockmeter/rockmeter.png";
+  	meter.src = "rockmeter/rockmeter_yellow.png";
   	meter.className = "rockmeter_meter";
   	this.meter = meter;
   	return meter;
