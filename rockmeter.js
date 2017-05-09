@@ -79,12 +79,12 @@ class RockMeter {
   		this._alertAllListeners(this.listeners["green"], val);
   	} else if (val <= -33 && old > -33) {
   		// became red
-      this.meter.src = "rockmeter/rockmeter_yellow.png";
+      this.meter.src = "rockmeter/rockmeter_red.png";
   		this._alertAllListeners(this.listeners["red"], val);
   	} else if ((val > -33 && old <= -33) 
   						|| ((val < 33 && old >= 33))) {
   		// became yellow
-      this.meter.src = "rockmeter/rockmeter_red.png";
+      this.meter.src = "rockmeter/rockmeter_yellow.png";
   		this._alertAllListeners(this.listeners["yellow"], val);
   	}
   }
