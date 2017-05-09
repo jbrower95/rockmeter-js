@@ -1,5 +1,5 @@
 # rockmeter-js
-The Rock-Meter Thing From Guitar Hero And Rock Band In YOUR Web Apps!
+The Rock-Meter Thing From Guitar Hero™ And Rock Band™ In YOUR Web Apps!
 
 <img src="https://github.com/jbrower95/rockmeter-js/blob/master/rockmeter/rockmeter.png?raw=true">
 
